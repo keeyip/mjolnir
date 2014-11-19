@@ -46,3 +46,34 @@ hotkey.bind({"alt"}, "4", function()
     f.h = max.h/2
     win:setframe(f)
 end)
+
+hotkey.bind({"alt"}, "j", function()
+    local win = window.focusedwindow()
+    local f = win:frame()
+    local max = win:screen():frame()
+    f.h = max.h/2
+    win:setframe(f)
+end)
+hotkey.bind({"alt"}, "k", function()
+    local win = window.focusedwindow()
+    local f = win:frame()
+    local max = win:screen():frame()
+    f.h = max.h
+    f.y = 0
+    win:setframe(f)
+end)
+hotkey.bind({"alt"}, "h", function()
+    local win = window.focusedwindow()
+    local f = win:frame()
+    local max = win:screen():frame()
+    f.w = max.w/2
+    win:setframe(f)
+end)
+hotkey.bind({"alt"}, "l", function()
+    local win = window.focusedwindow()
+    local f = win:frame()
+    local max = win:screen():frame()
+    f.w = max.w
+    f.x = 0
+    win:setframe(f)
+end)
